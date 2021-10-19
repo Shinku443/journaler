@@ -13,3 +13,11 @@
 .externalNativeBuild
 .cxx
 local.properties
+.idea
+build/
+gradle*
+!gradle-plugins*
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+gen

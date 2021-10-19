@@ -17,10 +17,17 @@ android {
     }
 
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        debug {
+            applicationIdSuffix ".dev"
         }
+        staging {
+            debuggable true
+            applicationIdSuffix ".sta"
+        }
+        preproduction {
+            applicationIdSuffix ".pre"
+        }
+        release {}
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
